@@ -43,3 +43,8 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Pastas específicas para ignorar em qualquer lugar do projeto
+**/test/
+**/web/
+**/windows/
