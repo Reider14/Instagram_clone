@@ -191,10 +191,62 @@ class homeScreen extends StatelessWidget {
                       style: TextStyle(fontSize: 12),
                     ),
                   );
-                }, itemCount: arrContent.length, scrollDirection: Axis.horizontal
+                },
+                itemCount: arrContent.length,
+                scrollDirection: Axis.horizontal,
               ),
             ),
           ),
+          Container(
+            height: 54,
+            width: double.infinity,
+            color: Colors.black12,
+            child: ListTile(
+              leading: UiHelper.CustomImage(imgurl: "person1.png"),
+              title: Text(
+                "Joshua_I",
+                style: TextStyle(fontSize: 13, color: Color(0XFFF9F9F9)),
+              ),
+              subtitle: Text(
+                "Tokyo, japan",
+                style: TextStyle(fontSize: 11, color: Color(0xFFF9F9F9)),
+              ),
+              trailing: UiHelper.CustomImage(imgurl: "More Icon.png"),
+            ),
+          ),
+          SizedBox(height: 8,),
+          Container(
+            clipBehavior: Clip.antiAlias,
+            height: 375,
+            width: double.infinity,
+            decoration: BoxDecoration(
+
+            ),
+            child: Image.asset("assets/images/Rectangle (1).png", fit: BoxFit.cover,)
+          ),
+          SizedBox(height: 10,),
+          Row(children: [
+            SizedBox(width: 14,),
+            UiHelper.CustomImage(imgurl: "Like.png"),
+            SizedBox(width: 20,),
+            UiHelper.CustomImage(imgurl: "Comment.png"),
+            SizedBox(width: 20,),
+            UiHelper.CustomImage(imgurl: "Messanger.png"),
+            SizedBox(width: 250,),
+            UiHelper.CustomImage(imgurl: "Save.png"),
+          ],),
+          SizedBox(height: 10,),
+          Row(children: [
+            SizedBox(width: 15,),
+            UiHelper.CustomImage(imgurl: "Ovalone.png"),
+            SizedBox(width: 5,),
+            Text("Like by craig_love and 44,686 others", style: TextStyle(fontSize: 13, color: Color(0xFFF9F9F9)),),
+          ],),
+          Row(children: [
+            SizedBox(width: 20,),
+            Text("Joshua_l", style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFFF9F9F9)),),
+            Text(" The game in Japan was amazing and I want!", style: TextStyle(fontSize: 13, color: Color(0xFFF9F9F9)),),
+          ],),
         ],
       ),
     );
