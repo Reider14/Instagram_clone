@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:untitled6/Screens/Bottomnav/BottomNav.dart';
 import 'package:untitled6/Screens/Sign%20Up/signUpScreen.dart';
 import 'package:untitled6/wigdgets/uihelper.dart';
 
@@ -38,7 +39,9 @@ class LoginScreen extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10),
-            UiHelper.CustomButton(callback: () {}, buttonname: "Log In"),
+            UiHelper.CustomButton(callback: () {
+              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNav()));
+              }, buttonname: "Log In"),
             SizedBox(
               height: 20,
             ),
@@ -46,7 +49,9 @@ class LoginScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 UiHelper.CustomImage(imgurl: "icon.png"),
-                UiHelper.CustomTextButton(text: "Log in with Facebook", callback: (){})
+                UiHelper.CustomTextButton(text: "Log in with Facebook", callback: (){
+
+                }),
               ],
             ),
             SizedBox(height: 10,),
